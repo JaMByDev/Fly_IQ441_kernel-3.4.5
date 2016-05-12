@@ -1379,7 +1379,7 @@ static inline void security_free_mnt_opts(struct security_mnt_opts *opts)
  * This is the main security structure.
  */
 struct security_operations {
-	char name[SECURITY_NAME_MAX + 1];
+	char name[SECURITY_NAME_MAX + 1]
 
 	int (*binder_set_context_mgr) (struct task_struct *mgr);
 	int (*binder_transaction) (struct task_struct *from, struct task_struct *to);
